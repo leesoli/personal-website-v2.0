@@ -51,6 +51,7 @@ export default function Work() {
                   setProject(project);
                   openModal();
                 }}
+                alt="thumbnail of webapp"
                 layout="fill" objectFit="cover" className="hover:scale-110 hover:brightness-110 duration-500 ease-in-out" src={project.thumbnail}/>
             </div>
           ))}
@@ -67,7 +68,10 @@ export default function Work() {
                   <div key={index} className="relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer">
                   <Image onClick={() => {
                     handleClick(index)
-                  }} layout="fill" objectFit="cover" src={url}/>
+                  }}
+                    alt="screenshot of web app"
+                    layout="fill" objectFit="cover"
+                    src={url}/>
                   </div>
                 ))}
               </div>
@@ -79,7 +83,11 @@ export default function Work() {
                   />
                 </div>
                 <div className="relative  h-72 sm:h-96 mt-8 w-full">
-                  <Image layout="fill" src={project.photos[index]} objectFit="contain"/>
+                  <Image
+                    layout="fill"
+                    src={project.photos[index]}
+                    alt="big screenshot of web app"
+                    objectFit="contain"/>
                 </div>
                 <div className="text-gray-400 w-2/12 flex items-center justify-center">
                     <ChevronRightIcon      className="w-12 h-12 hover:cursor-pointer border-gray-400 hover:brightness-200"
