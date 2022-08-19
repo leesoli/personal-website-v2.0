@@ -43,7 +43,9 @@ export default function Work() {
       <div className="border-double border-y-4 border-gray-300 py-12 sm:py-16">
         <div className="max-w-4xl sm:flex sm:justify-around sm:mx-auto">
           {projects.map(project => (
-            <div className="relative w-3/4 mx-auto sm:w-2/5 mb-4 last:mb-0 sm:mb-0 h-80">
+            <div
+              key={project.id}
+              className="relative w-3/4 mx-auto sm:w-2/5 mb-4 last:mb-0 sm:mb-0 h-80">
               <Image
                 onClick={() => {
                   setProject(project);
@@ -62,7 +64,7 @@ export default function Work() {
             <div className="flex flex-col-reverse sm:justify-between sm:flex-row items-center sm:w-8/12">
               <div className="flex flex-nowrap sm:flex-col justify-between sm:w-2/12 w-10/12 sm:h-96 overflow-x-auto my-4 border-[1px] border-gray-700 sm:my-0">
                 {project.photos.map((url, index) => (
-                  <div className="relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer">
+                  <div key={index} className="relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer">
                   <Image onClick={() => {
                     handleClick(index)
                   }} layout="fill" objectFit="cover" src={url}/>
@@ -91,8 +93,10 @@ export default function Work() {
               <div className="self-start text-xl text-white text-gray-200">{project.name}</div>
               <div className="my-4 text-white max-w-sm text-gray-400">{project.description}</div>
               <div className="hidden sm:flex flex-wrap max-w-sm my-4">
-                {project.techStack.map(item => (
-                  <span className="bg-gray-800 p-2 border-[1px] border-gray-200 rounded-3xl mr-1 mb-1 text-gray-200 text-xs">{item}</span>
+                {project.techStack.map((item, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-800 p-2 border-[1px] border-gray-200 rounded-3xl mr-1 mb-1 text-gray-200 text-xs">{item}</span>
                 ))}
               </div>
               <a href={project.url} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View Code <ArrowRightIcon className="inline w-5 h-5"/></a>
