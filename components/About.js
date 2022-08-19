@@ -1,9 +1,11 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div id="about" >
-      <div className="sm:flex p-9 sm:p-12">
-        <div className="flex flex-col justify-between sm:w-80 lg:items-center lg:w-full pb-8">
-          <h2 className="text-4xl font-cursive">Hi there!</h2>
+      <div className="sm:flex p-9 sm:p-12 sm:justify-between lg:max-w-5xl sm:mx-auto">
+        <div className="flex flex-col justify-between sm:w-80 lg:w-full pb-8">
+          <h2 className="text-4xl max-w-xl lg:text-center font-cursive">Hi there!</h2>
 
           <p className="my-4 max-w-xl lg:text-center">I'm Anna, a React front-end developer based in Tustin, California. I'm a self-taught developer with a keen eye for design and love to build simple, stylish interfaces on my free time. I'm inspired and motivated by anything that is food (including the first application I ever built!).</p>
 
@@ -13,7 +15,13 @@ export default function About() {
 
           <p className="my-4 max-w-xl lg:text-center">On my free time, I like to go rock climb or swimming.</p>
         </div>
-        <div className=""></div>
+        <div className="relative w-full h-[55vh] sm:w-1/3 sm:h-96 sm:self-center">
+          <Image
+            className="rounded-lg"
+            layout="fill"
+            objectFit="cover"
+            src="/profile-photo.jpg"/>
+        </div>
       </div>
 
       <div className="flex flex-col p-9 sm:p-8 sm:mb-12 sm:flex-row sm:justify-between sm:mx-auto w-full sm:w-3/4 bg-gray-100 sm:rounded-xl max-w-3xl">
