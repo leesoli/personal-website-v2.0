@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Happy Fridge",
+    "description": "A full stack website that offers a variety of recipe options based on the ingredients you have stocked in your home.",
+    "photos": ["/happy-fridge/home-page.png", "/happy-fridge/story-page.png", "/happy-fridge/recipes-page.png", "/happy-fridge/recipe.png"],
+    "thumbnail": "/happy-fridge/thumbnail.png",
+    "mobilePhotos": ["/happy-fridge/mobile-home.png", "/happy-fridge/mobile-recipe.png", "/happy-fridge/mobile-recipes.png"],
+    "url": "https://github.com/leesoli/happy-fridge-version2.0",
+    "techStack": ["Javascript", "React", "Node.js", "Express", "MongoDB", "Spoonacular API", "Mongoose",  "React Router", "HTML", "CSS", "Webpack"]
+  },
+  {
+    "id": 2,
+    "name": "Savorder",
+    "description": "A web app for customers to view restaurant details, including menu items. You can directly place orders online or contact the restaurant regarding personal/business inquiries.",
+    "photos": ["/savorder/home-page.png", "/savorder/contact-page.png","/savorder/story-page.png","/savorder/order-page.png", "/savorder/cart-page.png"],
+    "thumbnail": "/savorder/thumbnail.png",
+    "mobilePhotos": ["/savorder/mobile-home.png", "/savorder/mobile-order.png", "/savorder/mobile-cart.png"],
+    "url": "https://github.com/leesoli/react-restaurant-app",
+    "techStack": ["Javascript", "React", "React Context", "Next.js", "HTML", "CSS", "Webpack", "TailwindCSS"]
+  }
+]
