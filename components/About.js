@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import profilePhoto from '../public/profile.webp';
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
             className="rounded-lg"
             layout="fill"
             objectFit="cover"
-            src="/profile-photo.webp"/>
+            src={profilePhoto}/>
         </div>
       </div>
 
