@@ -20,7 +20,7 @@ export default function About() {
             className="rounded-lg"
             layout="fill"
             objectFit="cover"
-            src="/profile-photo.jpg"/>
+            src="/profile-photo.webp"/>
         </div>
       </div>
 
