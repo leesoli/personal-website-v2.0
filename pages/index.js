@@ -12,7 +12,7 @@ export default function Home() {
     <div className="font-serif">
       <Head>
         <title>Anna Lee Frontend Developer</title>
-        <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="UTF-8" className="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header/>
       <About/>
