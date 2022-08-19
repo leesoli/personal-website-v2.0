@@ -6,11 +6,11 @@ export default function Contact() {
       <div className="flex justify-between w-28">
         <a href="https://www.linkedin.com/in/solilee/" >
           <BsLinkedin className="text-4xl" aria-hidden="true"/>
-          <span class="sr-only">Linkedin icon</span>
+          <span className="sr-only">Linkedin icon</span>
         </a>
         <a href="https://github.com/leesoli">
           <BsGithub className="text-4xl" aria-hidden="true"/>
-          <span class="sr-only">Github icon</span>
+          <span className="sr-only">Github icon</span>
         </a>
       </div>
     </div>
