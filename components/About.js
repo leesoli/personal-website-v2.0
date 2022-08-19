@@ -18,6 +18,7 @@ export default function About() {
         </div>
         <div className="relative w-full h-[55vh] sm:w-1/3 sm:h-96 sm:self-center">
           <Image
+            alt="photo of Anna"
             className="rounded-br-[4rem] rounded-l-xl rounded-tr-xl shadow-md shadow-gray-300"
             layout="fill"
             objectFit="cover"
