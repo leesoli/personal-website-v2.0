@@ -14,7 +14,7 @@
     "description": "A web app for customers to view restaurant details, including menu items. You can directly place orders online or contact the restaurant regarding personal/business inquiries.",
     "photos": ["/savorder/home-page.webp", "/savorder/contact-page.webp","/savorder/story-page.webp","/savorder/order-page.webp", "/savorder/cart-page.webp"],
     "thumbnail": "/savorder/thumbnail.webp",
-    "url": "https://github.com/leesoli/react-restaurant-app",
+    "url": "https://github.com/leesoli/savorder",
     "techStack": ["Javascript", "React", "React Context", "Next.js", "HTML", "CSS", "Webpack", "TailwindCSS"]
   }
 ]
