@@ -3,18 +3,20 @@
     "id": 1,
     "name": "Happy Fridge",
     "description": "A full stack website that offers a variety of recipe options based on the ingredients you have stocked in your home.",
-    "photos": ["/happy-fridge/home-page.webp", "/happy-fridge/story-page.webp", "/happy-fridge/recipes-page.webp", "/happy-fridge/recipe.webp"],
+    "photos": ["/happy-fridge/home-page", "/happy-fridge/story-page", "/happy-fridge/recipes-page", "/happy-fridge/recipe"],
     "thumbnail": "/happy-fridge/thumbnail.webp",
-    "url": "https://github.com/leesoli/happy-fridge-version2.0",
+    "github": "https://github.com/leesoli/happy-fridge-version2.0",
+    "url": "https://happyfridge.netlify.app/",
     "techStack": ["Javascript", "React", "Node.js", "Express", "MongoDB", "Spoonacular API", "Mongoose",  "React Router", "HTML", "CSS", "Webpack"]
   },
   {
     "id": 2,
     "name": "Savorder",
     "description": "A web app for customers to view restaurant details, including menu items. You can directly place orders online or contact the restaurant regarding personal/business inquiries.",
-    "photos": ["/savorder/home-page.webp", "/savorder/contact-page.webp","/savorder/story-page.webp","/savorder/order-page.webp", "/savorder/cart-page.webp"],
+    "photos": ["/savorder/home-page", "/savorder/contact-page","/savorder/story-page","/savorder/order-page", "/savorder/cart-page"],
     "thumbnail": "/savorder/thumbnail.webp",
-    "url": "https://github.com/leesoli/savorder",
+    "github": "https://github.com/leesoli/savorder",
+    "url": "https://savorder.netlify.app/",
     "techStack": ["Javascript", "React", "React Context", "Next.js", "HTML", "CSS", "Webpack", "TailwindCSS"]
   }
 ]

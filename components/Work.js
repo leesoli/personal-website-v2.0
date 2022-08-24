@@ -63,15 +63,15 @@ export default function Work() {
           {project &&
           <div className="sm:flex items-center justify-around px-8">
             <div className="flex flex-col-reverse sm:justify-between sm:flex-row items-center sm:w-8/12">
-              <div className="flex flex-nowrap sm:flex-col justify-between sm:w-2/12 w-10/12 sm:h-96 overflow-x-auto my-4 border-[1px] border-gray-700 sm:my-0">
+              <div className="flex flex-nowrap sm:flex-col justify-between sm:w-2/12 w-10/12 sm:h-96 overflow-x-auto my-4 sm:my-0">
                 {project.photos.map((url, index) => (
                   <div key={index} className="relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer">
                   <Image onClick={() => {
                     handleClick(index)
                   }}
-                    alt="screenshot of web app"
+                    alt={`screenshot ${index + 1} of application`}
                     layout="fill" objectFit="cover"
-                    src={url}/>
+                    src={`${url}.webp`}/>
                   </div>
                 ))}
               </div>
@@ -85,8 +85,8 @@ export default function Work() {
                 <div className="relative  h-72 sm:h-96 mt-8 w-full">
                   <Image
                     layout="fill"
-                    src={project.photos[index]}
-                    alt="big screenshot of web app"
+                    src={`${project.photos[index]}.webp`}
+                    alt="main view of clicked image"
                     objectFit="contain"/>
                 </div>
                 <div className="text-gray-400 w-2/12 flex items-center justify-center">
@@ -107,7 +107,8 @@ export default function Work() {
                     className="bg-gray-800 p-2 border-[1px] border-gray-200 rounded-3xl mr-1 mb-1 text-gray-200 text-xs">{item}</span>
                 ))}
               </div>
-              <a href={project.url} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View Code <ArrowRightIcon className="inline w-5 h-5"/></a>
+              <a href={project.github} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View Code <ArrowRightIcon className="inline w-5 h-5"/></a>
+              <a href={project.url} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View App <ArrowRightIcon className="inline w-5 h-5"/></a>
             </div>
           </div>
           }
