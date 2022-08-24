@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import profilePhoto from '../public/profile.webp';
 
+
 export default function About() {
   return (
     <div id="about" >
