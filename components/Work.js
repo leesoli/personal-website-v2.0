@@ -108,7 +108,7 @@ export default function Work() {
                 ))}
               </div>
               <a href={project.github} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View Code <ArrowRightIcon className="inline w-5 h-5"/></a>
-              <a href={project.url} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View App <ArrowRightIcon className="inline w-5 h-5"/></a>
+              {/* <a href={project.url} className="text-gray-400 border-b-2 w-fit hover:cursor-pointer border-gray-400 hover:brightness-125">View App <ArrowRightIcon className="inline w-5 h-5"/></a> */}
             </div>
           </div>
           }
