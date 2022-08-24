@@ -65,7 +65,7 @@ export default function Work() {
             <div className="flex flex-col-reverse sm:justify-between sm:flex-row items-center sm:w-8/12">
               <div className="flex flex-nowrap sm:flex-col justify-between sm:w-2/12 w-10/12 sm:h-96 overflow-y-auto sm:overflow-x-auto my-4 sm:my-0">
                 {project.photos.map((url, index) => (
-                  <div key={index} className="mr-4 last:mr-0 relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer flex-shrink-0">
+                  <div key={index} className="sm:mb-4 sm:last:mb-0 sm:mr-0 mr-4 last:mr-0 relative w-1/3 sm:w-full h-16 sm:h-32 hover:cursor-pointer flex-shrink-0">
                   <Image onClick={() => {
                     handleClick(index)
                   }}
